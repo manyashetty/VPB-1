@@ -1,7 +1,8 @@
 /* CSS for screens with a width of 768px and below (typical mobile phones) */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .hero {
-    background-size: cover; /* Ensure the background covers the entire viewport */
+    background-image: url('../images/rr.jpg'); 
+    background-size: cover;
     text-align: center;
   }
 
@@ -35,8 +36,8 @@
 
 /* Apply a static banner background image */
 .hero {
-  /* background-image: url('../images/rr.jpg'); */
-  /* background-size: cover; */
+  background-image: url('../images/rr.jpg'); 
+  background-size: cover;
   /* background-attachment: fixed;  */
   height: 100vh;
   display: flex;
@@ -120,3 +121,91 @@ margin-left: 90px;
 html {
   scroll-behavior: smooth;
 }
+
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 40vw;
+  margin-bottom: 40px;
+}
+
+@media (width <= 620px) {
+  .banner {
+    text-align: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 200%;
+  height: 110%;
+  rotate: -2deg;
+  background: #1a56b8;
+}
+
+.banner h2 {
+  white-space: nowrap;
+  margin: 0 0 4px;
+  font-size: 40px;
+  color: rgb(255 255 255 / 96%);
+}
+
+.banner h3 {
+  font-weight: 400;
+  margin: 0;
+  color: rgb(255 255 255 / 57%);
+}
+
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 48% 72% 84% 36% / 48% 48% 72% 60%; /* Enlarge the border-radius */
+  }
+  34% {
+    border-radius: 84% 36% 60% 60% / 36% 36% 84% 84%; /* Enlarge the border-radius */
+  }
+  67% {
+    border-radius: 120% 72% 72% 120% / 120% 120% 72% 72%; /* Enlarge the border-radius */
+  }
+}
+
+.banner img {
+  width: 264px; /* Enlarge the width by 20% */
+  height: 264px; /* Enlarge the height by 20% */
+  object-fit: cover;
+  animation: morph 3.5s linear infinite;
+}
+
+/* 
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+.banner img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  animation: morph 3.5s linear infinite;
+} */

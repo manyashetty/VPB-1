@@ -1,6 +1,6 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import banimg from "../images/rr.jpg";
 import "./Home.css";
 import Services from '../components/Services';
 import Projects from '../components/Projects';
@@ -9,8 +9,17 @@ import Testimonials from '../components/Testimonial';
 export const Home = () => {
   return (
     <div className="home">
-      
-      <section className="hero">
+      <section class="banner">
+      <div>
+        <h2>Joe's NFT Art</h2>
+        <h3>
+          Welcome to the cat kingdom, please take a moment to browse our
+          collection.
+        </h3>
+      </div>
+      <img src={banimg} alt='banner-img'/>
+    </section>
+      {/* <section className="hero">
         <div className="hero-content">
           
           <h1 id='heading'>Turn Visions
@@ -21,7 +30,7 @@ export const Home = () => {
           <a href="/about" className="btn btn-info text-left">Learn More About-Us</a>
 
         </div>
-      </section>
+      </section> */}
       <div className='content-1'>
         <h2>Keeping You in the Loop: <br/>Our Promise to Provide Unparalleled Customer Service!</h2>
         <p>We are committed to exceptional customer service, answering questions, and keeping you <br/>updated on marketing campaigns.Our goal is to establish a strong partnership and help you succeed.</p>
