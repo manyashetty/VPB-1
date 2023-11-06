@@ -5,6 +5,8 @@ import Card from 'react-bootstrap/Card';
 import img from '../images/Online Review-pana.png';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { Carousel } from 'react-bootstrap';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const Testimonial = () => {
   const [testimonial, setTestimonial] = useState([]);

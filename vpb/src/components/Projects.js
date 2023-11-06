@@ -3,7 +3,8 @@ import './Projects.css';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
-
+import dotenv from 'dotenv';
+dotenv.config();
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const itemsPerSlide = 4; // Number of items to display in each slide
