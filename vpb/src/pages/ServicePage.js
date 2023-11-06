@@ -7,8 +7,6 @@ import serimg from "../images/Web devices-amico.png";
 import { svgCode } from '../components/bgprojects';
 import "./Pro.css";
 import ContactCard from '../components/Contact-card';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const ServicePage = () => {
   const { id } = useParams();

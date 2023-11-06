@@ -3,15 +3,13 @@ import './Services.css';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const Services = () => {
   const [services, setServices] = useState([]);
   const itemsPerSlide = 4; // Number of items to display in each slide
   const totalSlides = Math.ceil(services.length / itemsPerSlide); 
   const apiUrl = process.env.REACT_APP_API_URL;
-
+  
   useEffect(() => {
     axios
       .get(`${apiUrl}/api/services`, { withCredentials: false })

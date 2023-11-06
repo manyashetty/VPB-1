@@ -5,8 +5,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./Navbar.css";
 import logo from "../assets/Icon.png";
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 export const Navbar = () => {
   const [services, setServicesNames] = useState([]);
