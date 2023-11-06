@@ -108,11 +108,11 @@ app.post('/upload', upload.single('file'), (req: Request, res: Response) => {
 });
 
 
-const corsOptions: cors.CorsOptions = {
-  origin: 'https://test1-voltrix.web.app',
-};
+// const corsOptions: cors.CorsOptions = {
+//   origin: 'https://test1-voltrix.web.app',
+// };
 
-app.use(cors(corsOptions));
+app.use(cors({origin:'*'}));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

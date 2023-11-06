@@ -80,10 +80,10 @@ app.post('/upload', Bucket_1.upload.single('file'), (req, res) => {
         res.json({ key: fileKey, url: fileUrl });
     });
 });
-const corsOptions = {
-    origin: 'https://test1-voltrix.web.app',
-};
-app.use((0, cors_1.default)(corsOptions));
+// const corsOptions: cors.CorsOptions = {
+//   origin: 'https://test1-voltrix.web.app',
+// };
+app.use((0, cors_1.default)({ origin: '*' }));
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
