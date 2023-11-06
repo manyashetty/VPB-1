@@ -8,10 +8,11 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   const itemsPerSlide = 4; // Number of items to display in each slide
   const totalSlides = Math.ceil(projects.length / itemsPerSlide); // Calculate the total number of slides
-
+  const apiUrl = process.env.REACT_APP_API_URL;
+  
   useEffect(() => {
     axios
-      .get('https://vpb-f.onrender.com/api/project')
+      .get(`${apiUrl}/api/project`)
       .then((response) => setProjects(response.data))
       .catch((error) => console.log(error));
   }, []);

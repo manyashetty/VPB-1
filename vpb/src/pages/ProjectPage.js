@@ -11,9 +11,9 @@ import ContactCard from '../components/Contact-card';
 const ProjectPage = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
-
+  const apiUrl = process.env.REACT_APP_API_URL;
   useEffect(() => {
-    axios.get(`https://vpb-f.onrender.com/api/project/${id}`)
+    axios.get(`${apiUrl}/api/project/${id}`)
       .then((response) => {
         setProject(response.data);
       })

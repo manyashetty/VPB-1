@@ -8,10 +8,11 @@ import { Carousel } from 'react-bootstrap';
 
 const Testimonial = () => {
   const [testimonial, setTestimonial] = useState([]);
-
+  const apiUrl = process.env.REACT_APP_API_URL;
+  
   useEffect(() => {
     axios
-      .get('https://vpb-f.onrender.com/api/testimonial')
+      .get(`${apiUrl}/api/testimonial`)
       .then((response) => setTestimonial(response.data))
       .catch((error) => console.log(error));
   }, []);

@@ -4,10 +4,11 @@ import axios from 'axios';
 
 export const Project = () => {
   const [projectIds, setProjectIds] = useState([]);
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     // Fetch the list of project IDs from your API
-    axios.get('https://vpb-f.onrender.com/api/project')
+    axios.get(`${apiUrl}/api/project`)
       .then((response) => {
         setProjectIds(response.data); // Assuming your API returns an array of project IDs
       })
