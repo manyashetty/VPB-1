@@ -11,7 +11,7 @@ const Testimonial = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/testimonial')
+      .get('https://vpb-f.onrender.com/api/testimonial')
       .then((response) => setTestimonial(response.data))
       .catch((error) => console.log(error));
   }, []);

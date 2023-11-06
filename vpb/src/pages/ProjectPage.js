@@ -13,7 +13,7 @@ const ProjectPage = () => {
   const [project, setProject] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/api/project/${id}`)
+    axios.get(`https://vpb-f.onrender.com/api/project/${id}`)
       .then((response) => {
         setProject(response.data);
       })

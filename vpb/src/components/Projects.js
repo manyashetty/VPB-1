@@ -11,7 +11,7 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/project')
+      .get('https://vpb-f.onrender.com/api/project')
       .then((response) => setProjects(response.data))
       .catch((error) => console.log(error));
   }, []);

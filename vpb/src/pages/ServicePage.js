@@ -14,7 +14,7 @@ const ServicePage = () => {
 
   useEffect(() => {
   
-    axios.get(`http://localhost:3000/api/services/${id}`)
+    axios.get(`https://vpb-f.onrender.com/api/services/${id}`)
     .then((response) => {
       setService(response.data); 
     })

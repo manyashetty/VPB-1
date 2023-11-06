@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   useEffect(() => {
   
-    axios.get('http://localhost:3000/api/services')
+    axios.get('https://vpb-f.onrender.com/api/services')
     .then((response) => {
       setServicesNames(response.data); 
     })

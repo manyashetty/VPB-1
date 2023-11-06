@@ -29,7 +29,12 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3001' }));
+// app.use(cors({ origin: 'http://localhost:3001' }));
+const corsOptions: cors.CorsOptions = {
+  origin: 'https://test1-voltrix.web.app',
+};
+
+app.use(cors(corsOptions));
 
 mongoose.connect(MongoDB as string)
   .then(() => {

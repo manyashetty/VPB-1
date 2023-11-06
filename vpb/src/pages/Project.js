@@ -7,7 +7,7 @@ export const Project = () => {
 
   useEffect(() => {
     // Fetch the list of project IDs from your API
-    axios.get('http://localhost:3000/api/project')
+    axios.get('https://vpb-f.onrender.com/api/project')
       .then((response) => {
         setProjectIds(response.data); // Assuming your API returns an array of project IDs
       })

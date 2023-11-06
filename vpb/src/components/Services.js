@@ -11,7 +11,7 @@ const Services = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/services')
+      .get('https://vpb-f.onrender.com/api/services')
       .then((response) => setServices(response.data))
       .catch((error) => console.log(error));
   }, []);
