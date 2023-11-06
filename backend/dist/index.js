@@ -22,9 +22,10 @@ const SECRET_KEY = process.env.SECRET_KEY;
 const REFRESH_SECRET_KEY = process.env.REFRESH_SECRET_KEY;
 const MongoDB = process.env.MONGODB_URL;
 const app = (0, express_1.default)();
-const port = 3000;
+// const port = 3000;
+const PORT = process.env.PORT || 3000;
 app.use(express_1.default.json());
-app.use((0, cors_1.default)({ origin: 'http://localhost:3001' }));
+// app.use(cors({ origin: 'http://localhost:3001' }));
 mongoose_1.default.connect(MongoDB)
     .then(() => {
     console.log('Connected to MongoDB');
@@ -79,6 +80,10 @@ app.post('/upload', Bucket_1.upload.single('file'), (req, res) => {
         res.json({ key: fileKey, url: fileUrl });
     });
 });
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+const corsOptions = {
+    origin: 'https://test1-voltrix.web.app',
+};
+app.use((0, cors_1.default)(corsOptions));
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
