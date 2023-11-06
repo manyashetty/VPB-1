@@ -4,7 +4,8 @@ module.exports = {
   
     resolve: {
       fallback: {
-        "path":false
+        "path":false,
+        "os": false 
       }
     },
   };
