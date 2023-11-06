@@ -3,16 +3,17 @@ import './Projects.css';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
-
+import dotenv from 'dotenv';
+dotenv.config();
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const itemsPerSlide = 4; // Number of items to display in each slide
   const totalSlides = Math.ceil(projects.length / itemsPerSlide); // Calculate the total number of slides
- 
+  const apiUrl = process.env.REACT_APP_API_URL;
   
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/api/project`)
+      .get(`${apiUrl}/api/project`)
       .then((response) => setProjects(response.data))
       .catch((error) => console.log(error));
   }, []);

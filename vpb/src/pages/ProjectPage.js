@@ -13,9 +13,9 @@ dotenv.config();
 const ProjectPage = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
-
+  const apiUrl = process.env.REACT_APP_API_URL;
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/project/${id}`)
+    axios.get(`${apiUrl}/api/project/${id}`)
       .then((response) => {
         setProject(response.data);
       })

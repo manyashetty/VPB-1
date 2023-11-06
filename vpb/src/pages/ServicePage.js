@@ -13,11 +13,11 @@ dotenv.config();
 const ServicePage = () => {
   const { id } = useParams();
   const [service, setService] = useState(null);
-
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
   
-    axios.get(`${process.env.REACT_APP_API_URL}/api/services/${id}`,{ withCredentials: false })
+    axios.get(`${apiUrl}/api/services/${id}`,{ withCredentials: false })
     .then((response) => {
       setService(response.data); 
     })
