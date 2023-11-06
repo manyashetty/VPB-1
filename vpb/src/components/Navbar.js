@@ -5,16 +5,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./Navbar.css";
 import logo from "../assets/Icon.png";
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 export const Navbar = () => {
   const [services, setServicesNames] = useState([]);
-  const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
   
-    axios.get(`${apiUrl}/api/services`)
+    axios.get(`${process.env.REACT_APP_API_URL}/api/services`)
     .then((response) => {
       setServicesNames(response.data); 
     })

@@ -10,11 +10,11 @@ dotenv.config();
 
 const Testimonial = () => {
   const [testimonial, setTestimonial] = useState([]);
-  const apiUrl = process.env.REACT_APP_API_URL;
+
   
   useEffect(() => {
     axios
-      .get(`${apiUrl}/api/testimonial`)
+      .get(`${process.env.REACT_APP_API_URL}/api/testimonial`)
       .then((response) => setTestimonial(response.data))
       .catch((error) => console.log(error));
   }, []);
