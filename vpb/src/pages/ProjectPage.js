@@ -7,7 +7,8 @@ import proimg from "../images/Organizing projects-rafiki.png";
 import { svgCode } from '../components/bgprojects';
 import "./Pro.css";
 import ContactCard from '../components/Contact-card';
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 const ProjectPage = () => {
   const { id } = useParams();

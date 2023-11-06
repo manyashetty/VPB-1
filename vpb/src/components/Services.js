@@ -3,7 +3,8 @@ import './Services.css';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 const Services = () => {
   const [services, setServices] = useState([]);
