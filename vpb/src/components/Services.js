@@ -12,7 +12,7 @@ const Services = () => {
   
   useEffect(() => {
     axios
-      .get(`${apiUrl}/api/services`)
+      .get(`${apiUrl}/api/services`, { withCredentials: false })
       .then((response) => setServices(response.data))
       .catch((error) => console.log(error));
   }, []);
