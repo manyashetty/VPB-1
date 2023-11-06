@@ -15,7 +15,7 @@ const ServicePage = () => {
 
   useEffect(() => {
   
-    axios.get(`${apiUrl}/api/services/${id}`,{ withCredentials: false })
+    axios.get(`${apiUrl}/api/services/${id}`)
     .then((response) => {
       setService(response.data); 
     })
