@@ -1,0 +1,61 @@
+[debug] [2023-11-07T03:07:15.285Z] ----------------------------------------------------------------------
+[debug] [2023-11-07T03:07:15.294Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-07T03:07:15.295Z] CLI Version:   12.8.0
+[debug] [2023-11-07T03:07:15.296Z] Platform:      win32
+[debug] [2023-11-07T03:07:15.297Z] Node Version:  v18.12.1
+[debug] [2023-11-07T03:07:15.305Z] Time:          Tue Nov 07 2023 08:37:15 GMT+0530 (India Standard Time)
+[debug] [2023-11-07T03:07:15.306Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-07T03:07:15.746Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-07T03:07:15.748Z] > authorizing via signed-in user (taniyashetty54321@gmail.com)
+[debug] [2023-11-07T03:07:15.749Z] [iam] checking project test1-voltrix for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-07T03:07:15.763Z] > refreshing access token with scopes: []
+[debug] [2023-11-07T03:07:15.769Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-07T03:07:15.770Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-07T03:07:27.141Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------871636561241313340887512","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2023-11-07T03:07:27.142Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-11-07T03:07:27.143Z] > refreshing access token with scopes: []
+[debug] [2023-11-07T03:07:27.144Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-07T03:07:27.145Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-07T03:07:40.531Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------536647146901856569542214","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: socket hang up
+[debug] [2023-11-07T03:07:40.533Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-11-07T03:07:45.592Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-11-07T03:08:18.423Z] ----------------------------------------------------------------------
+[debug] [2023-11-07T03:08:18.432Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-07T03:08:18.433Z] CLI Version:   12.8.0
+[debug] [2023-11-07T03:08:18.434Z] Platform:      win32
+[debug] [2023-11-07T03:08:18.434Z] Node Version:  v18.12.1
+[debug] [2023-11-07T03:08:18.437Z] Time:          Tue Nov 07 2023 08:38:18 GMT+0530 (India Standard Time)
+[debug] [2023-11-07T03:08:18.437Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-07T03:08:18.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-07T03:08:18.782Z] > authorizing via signed-in user (taniyashetty54321@gmail.com)
+[debug] [2023-11-07T03:08:18.783Z] [iam] checking project test1-voltrix for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-07T03:08:18.789Z] > refreshing access token with scopes: []
+[debug] [2023-11-07T03:08:18.800Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-07T03:08:18.800Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-07T03:08:27.038Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-07T03:08:27.038Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-07T03:08:27.067Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/test1-voltrix:testIamPermissions [none]
+[debug] [2023-11-07T03:08:27.067Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/test1-voltrix:testIamPermissions x-goog-quota-user=projects/test1-voltrix
+[debug] [2023-11-07T03:08:27.067Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/test1-voltrix:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-07T03:08:39.790Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/test1-voltrix:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/test1-voltrix:testIamPermissions failed, reason: socket hang up
+[debug] [2023-11-07T03:08:39.791Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/test1-voltrix:testIamPermissions
+[debug] [2023-11-07T03:08:39.794Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test1-voltrix [none]
+[debug] [2023-11-07T03:08:59.124Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/test1-voltrix, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/test1-voltrix failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2023-11-07T03:08:59.125Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/test1-voltrix (original: request to https://firebase.googleapis.com/v1beta1/projects/test1-voltrix failed, reason: Client network socket disconnected before secure TLS connection was established)
+[debug] [2023-11-07T03:09:04.154Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
