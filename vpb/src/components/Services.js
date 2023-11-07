@@ -8,11 +8,11 @@ const Services = () => {
   const [services, setServices] = useState([]);
   const itemsPerSlide = 4; // Number of items to display in each slide
   const totalSlides = Math.ceil(services.length / itemsPerSlide); 
-  const apiUrl = process.env.REACT_APP_API_URL;
+
   
   useEffect(() => {
     axios
-      .get(`${apiUrl}/api/services`)
+      .get(`${process.env.REACT_APP_API_URL}/api/services`)
       .then((response) => setServices(response.data))
       .catch((error) => console.log(error));
   }, []);

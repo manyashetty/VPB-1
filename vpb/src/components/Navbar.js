@@ -8,11 +8,11 @@ import axios from 'axios';
 
 export const Navbar = () => {
   const [services, setServicesNames] = useState([]);
-  const apiUrl = process.env.REACT_APP_API_URL;
+   
 
   useEffect(() => {
   
-    axios.get(`${apiUrl}/api/services`)
+    axios.get(`${process.env.REACT_APP_API_URL}/api/services`)
     .then((response) => {
       setServicesNames(response.data); 
     })

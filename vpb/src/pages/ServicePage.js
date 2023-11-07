@@ -11,11 +11,11 @@ import ContactCard from '../components/Contact-card';
 const ServicePage = () => {
   const { id } = useParams();
   const [service, setService] = useState(null);
-  const apiUrl = process.env.REACT_APP_API_URL;
+ 
 
   useEffect(() => {
   
-    axios.get(`${apiUrl}/api/services/${id}`)
+    axios.get(`${process.env.REACT_APP_API_URL}/api/services/${id}`)
     .then((response) => {
       setService(response.data); 
     })

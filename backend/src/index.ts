@@ -112,8 +112,8 @@ app.post('/upload', upload.single('file'), (req: Request, res: Response) => {
 //   origin: 'https://test1-voltrix.web.app',
 // };
 
-app.use(cors({origin:'*',
-credentials: true, 
+app.use(cors({origin:'*'
+// credentials: true, 
 }));
 
 app.listen(PORT, () => {
