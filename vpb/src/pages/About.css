@@ -1,5 +1,5 @@
 
-.id{
+/* .id{
     background-size: cover;
     background-image: url("../images/bg3.jpg"); 
     height: 300px;  
@@ -12,7 +12,7 @@
     color:white;
     border:2px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+} */
 .container .id h3{
     color:rgb(51, 49, 49);
 }
@@ -45,15 +45,15 @@ h3 {
 .section-heading1 h2{
     margin-left: 90px;
 }
-.col-lg-8 {
-    position: relative; /* Set the parent element to a relative position */
+/* .col-lg-8 {
+    position: relative; 
     width: 90%;
     background-image: url("../images/girl.jpeg");
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin-left: 90px;
-}
+} */
 
 .col-lg-8::before {
     content: "";
@@ -66,9 +66,9 @@ h3 {
     background-size:cover;
     z-index: 1; 
 } 
-.container1 {
+/* .container1 {
     padding: 90px;
-}
+} */
  .container1 h2{
     font-family:' var(--primary-font), sans-serif';
     font-size: 32px;
@@ -81,8 +81,8 @@ h3 {
 .container1 p{
     color:grey;
 }
-.content{
-    position: relative; /* Set the parent element to a relative position */
+/* .content{
+    position: relative; 
     width: 90%;
     background-image: url("../images/Online\ Review-pana.png");
     background-size: cover;
@@ -100,7 +100,7 @@ h3 {
         margin-left: 90px;
         border-radius: 10px;
 
-}
+} */
 .container2 .content h2 {
     padding-top: 20px;
     font-family:' var(--primary-font), sans-serif';
@@ -108,4 +108,56 @@ h3 {
 .container2 .content h5{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:grey;
+}
+
+/*  */
+.id {
+    background: linear-gradient(to bottom, #FF5733, #FFC300); /* Example gradient colors */
+    height: 300px;
+    padding: 90px;
+}
+
+.about {
+    background: linear-gradient(to right, #00b09b, #96c93d); /* Example gradient colors */
+    height: 20px;
+    width: 90px;
+    color: white;
+    border: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.col-lg-8 {
+    position: relative;
+    width: 90%;
+    background: linear-gradient(to bottom, #4d94ff, #36b0ff); /* Example gradient colors */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-left: 90px;
+}
+
+.container1 {
+    padding: 90px;
+    background: linear-gradient(to bottom, #FF5733, #FFC300); /* Example gradient colors */
+}
+
+.content {
+    position: relative;
+    width: 90%;
+    background: linear-gradient(to right, #4d94ff, #36b0ff); /* Example gradient colors */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-left: 90px;
+    height: 220px;
+}
+
+.button {
+    background: linear-gradient(to right, #00b09b, #96c93d); /* Example gradient colors */
+    height: 60px;
+    width: 150px;
+    color: white;
+    border: 2px;
+    margin-left: 90px;
+    border-radius: 10px;
 }
