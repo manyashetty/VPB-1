@@ -1,6 +1,5 @@
 .col-lg-11 {
     background-size: cover;
-    background-image: url("../images/bg3.jpg");
     height: 300px;
     padding: 90px;
     color: rgb(55, 55, 52);
@@ -37,10 +36,13 @@
     margin-left:30px;
 } 
 .contact-heading1{
-    margin-left: 90px;
-    color:grey;
+    margin-left: 0px;
+    color:rgb(0, 0, 0);
 }
 .form {
     display: flex;
     align-items: flex-start;
   }
+.container11{
+    background-image: url("../images//quantum-gradient\ \(1\).png");
+}

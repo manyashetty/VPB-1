@@ -18,12 +18,11 @@ export const Project = () => {
   }, []);
 
   return (
-    <div >
-      {projectIds.map((projectId) => (
-        <div className="row" key={projectId}>
-          <div className="col-md-4">
+    <div className="container">
+      <div className="row">
+        {projectIds.map((projectId) => (
+          <div className="col-md-4" key={projectId}>
             <div className="card mb-4">
-       
               <img src={`${projectId.image_url}`} className="card-img-top" alt={`Project ${projectId}`} />
               <div className="card-body">
                 <h5 className="card-title">{`Project ${projectId.name}`}</h5>
@@ -34,10 +33,8 @@ export const Project = () => {
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
-
-

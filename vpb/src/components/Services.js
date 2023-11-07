@@ -35,7 +35,7 @@ const Services = () => {
                       <Card.Img
                         src={service.image_url}
                         alt={service.name}
-                        style={{ width: '17rem', height: '14rem' }}
+                        style={{ width: '17.9rem', height: '14rem' }}
                       />
                       <Card.Body>
                         <Card.Title>{service.name}</Card.Title>

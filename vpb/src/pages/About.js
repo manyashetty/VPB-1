@@ -1,8 +1,11 @@
 import React from 'react'
 import "./About.css";
+import oneimg from "../images/About us page-pana.png";
+import twoimg from "../images/Creative team-cuate (2).png";
 export const About = () => {
   return (
   <>
+  <div id='full'>
     <div class="container">
     <div class="id">
     <p>
@@ -14,27 +17,35 @@ export const About = () => {
         </div>
 
         <div class="row workflow-wrap padding">
-            <div class="col-lg-7 sm-padding">
+        <div className='row'>
+            <div class="col-lg-6 sm-padding">
             <div class="section-heading">
-                <h1><b>We are Voltix Solution</b></h1>
-                <p>Voltix Solution is a web and mobile app development company in Calicut. We are always looking for amazing clients with exceptional ideas.We find these challenges and improvements rewarding because they help us to grow and improve as a company. Our work culture is built on constant improvement, which is why we are one of the best web and mobile app developers in Calicut. We offer more than just an application or design. We offer a carefully crafted solution that meets the needs of our clients. We are confident that we can help you achieve your goals by working with you to understand your needs and develop a custom solution that is tailored to your specific requirements. We use the latest technologies and techniques to ensure that your software is up-to-date and secure. We are also committed to providing you with excellent customer service. We are always available to answer your questions and help you with any problems you may encounter. If you are looking for a web or mobile app development company that can help you achieve your goals, then Voltix Solution is the company for you. We are committed to providing you with the highest quality of service and the best possible results.</p>
+                <h1><b>We are Voltrix Solution</b></h1>
+                <p>Voltrix Solution is a web and mobile app development company in Calicut. We are always looking for amazing clients with exceptional ideas.We find these challenges and improvements rewarding because they help us to grow and improve as a company. Our work culture is built on constant improvement, which is why we are one of the best web and mobile app developers in Calicut. We offer more than just an application or design. We offer a carefully crafted solution that meets the needs of our clients. We are confident that we can help you achieve your goals by working with you to understand your needs and develop a custom solution that is tailored to your specific requirements. We use the latest technologies and techniques to ensure that your software is up-to-date and secure. We are also committed to providing you with excellent customer service. We are always available to answer your questions and help you with any problems you may encounter. If you are looking for a web or mobile app development company that can help you achieve your goals, then Voltix Solution is the company for you. We are committed to providing you with the highest quality of service and the best possible results.</p>
             </div>
             </div>
+            <div className='col-lg-6'>
+                <img src={oneimg} alt="svsf" id='abtimg' />
+            </div>
+            </div>
+            
         </div>
 
         <div class="row workflow-wrap padding">
-            <div class="col-lg-8">
+            <div class="col-lg-8">-
                 <div class="section-heading1">
-                    <h2>
+                    <h2 id='plz'>
                         "We are here to redefine"
                         <br></br>
                         the way you do your business
                         </h2>
-                    <h2>
+                    <h2 id='plz'>
                         <p>Our process - How we get things done for you.</p>
                     </h2>
                 </div>
-                <div class="workflow-items">
+                    <div className='row'>
+                    <div class="col-lg-6 sm-padding">
+                    <div class="workflow-items">
                     <div class="workflow-item">
                         <div class="workflow-info">
                                 <h3>1. Planning it right</h3>
@@ -57,11 +68,18 @@ export const About = () => {
                         </div>
                     </div>
                 </div>
+                        </div>
+                        <div class="col-lg-6 sm-padding">
+                            <img src={twoimg} alt='dfds' id='abtimg'/>
+                        </div>
+                    </div>
+              
             </div>
-            <div class="col-lg-5">
+<div class="col-lg-5">
                 <div class="workflow-img"></div>
-                </div>
+                </div>            
         </div>
+
         </div>   
         <div class="container1">
             <h2>How we work</h2>
@@ -77,11 +95,14 @@ export const About = () => {
                 We provide innovative solutions and services to help you<br></br>achieve business success.
                 </h2>
                 <h5>Innovative solutions for business success.</h5>
-                <button class="button">Get started for free</button>
+                <a href="https://test1-voltrix.web.app/services/65400e11f71af1808e56e8e7">
+  <button class="button">Get started for free</button>
+</a>
+
             </center>
             </div>
         </div>   
-
+        </div>
   </>
   
 

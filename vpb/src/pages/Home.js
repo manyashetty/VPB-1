@@ -1,6 +1,6 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
-import banimg from "../images/rr.jpg";
+import banimg from "../images/bg4.avif";
 import "./Home.css";
 import Services from '../components/Services';
 import Projects from '../components/Projects';
@@ -11,30 +11,21 @@ export const Home = () => {
     <div className="home">
       <section class="banner">
       <div>
-        <h2>Joe's NFT Art</h2>
-        <h3>
-          Welcome to the cat kingdom, please take a moment to browse our
-          collection.
-        </h3>
+      <h2 id='heading'>Turn Visions
+          <br />
+        <span class="margin-left">into Reality !!</span>
+</h2>
+      
+        <h6 id='banner-text'>The success in developing business solutions can be attributed to our team of skilled and dedicated professionals, who are instrumental in our achievements.</h6>
+          <a href="/aboutus" className="btn btn-info text-left">Learn More About-Us</a>
       </div>
       <img src={banimg} alt='banner-img'/>
     </section>
-      {/* <section className="hero">
-        <div className="hero-content">
-          
-          <h1 id='heading'>Turn Visions
-          <br />
-        <span class="margin-left">into Reality !!</span>
-</h1>
-          <h6 id='banner-text'>The success in developing business solutions can be attributed to our team of skilled and dedicated professionals, who are instrumental in our achievements.</h6>
-          <a href="/about" className="btn btn-info text-left">Learn More About-Us</a>
-
-        </div>
-      </section> */}
-      <div className='content-1'>
+     
+      <section className='content-1'>
         <h2>Keeping You in the Loop: <br/>Our Promise to Provide Unparalleled Customer Service!</h2>
         <p>We are committed to exceptional customer service, answering questions, and keeping you <br/>updated on marketing campaigns.Our goal is to establish a strong partnership and help you succeed.</p>
-      </div>
+      </section>
       <section className="services">
         <div className="services-inner">
           <h2 id="hval">Our Services</h2>
