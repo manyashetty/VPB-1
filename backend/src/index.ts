@@ -27,7 +27,11 @@ const REFRESH_SECRET_KEY = process.env.REFRESH_SECRET_KEY;
 const MongoDB= process.env.MONGODB_URL;
 const app = express();
 // const port = 3000;
-const PORT = process.env.PORT || 3000; 
+const PORT = process.env.PORT || 3000;
+
+app.use(cors({origin:'*'
+// credentials: true, 
+}));
 
 app.use(express.json());
 // app.use(cors({ origin: 'http://localhost:3001' }));
@@ -112,9 +116,7 @@ app.post('/upload', upload.single('file'), (req: Request, res: Response) => {
 //   origin: 'https://test1-voltrix.web.app',
 // };
 
-app.use(cors({origin:'*'
-// credentials: true, 
-}));
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

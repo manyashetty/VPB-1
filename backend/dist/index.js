@@ -24,6 +24,9 @@ const MongoDB = process.env.MONGODB_URL;
 const app = (0, express_1.default)();
 // const port = 3000;
 const PORT = process.env.PORT || 3000;
+app.use((0, cors_1.default)({ origin: '*'
+    // credentials: true, 
+}));
 app.use(express_1.default.json());
 // app.use(cors({ origin: 'http://localhost:3001' }));
 mongoose_1.default.connect(MongoDB)
@@ -83,9 +86,6 @@ app.post('/upload', Bucket_1.upload.single('file'), (req, res) => {
 // const corsOptions: cors.CorsOptions = {
 //   origin: 'https://test1-voltrix.web.app',
 // };
-app.use((0, cors_1.default)({ origin: '*'
-    // credentials: true, 
-}));
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
