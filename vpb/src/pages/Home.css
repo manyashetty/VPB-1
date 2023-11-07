@@ -131,7 +131,7 @@ html {
   justify-content: space-between;
   padding-top: 100px;
   padding-bottom: 100px;
-  min-height: 40vw;
+  /* min-height: 40vw; */
   margin-bottom: 40px;
 }
 
@@ -168,23 +168,24 @@ html {
   margin: 0;
   color: rgb(255 255 255 / 57%);
 }
-
-
 @keyframes morph {
   0%, 100% {
-    border-radius: 48% 72% 84% 36% / 48% 48% 72% 60%; /* Enlarge the border-radius */
+    border-radius: 48% 72% 84% 36% / 48% 48% 72% 60%;
+  /* Enlarge the border-radius */
   }
   34% {
-    border-radius: 84% 36% 60% 60% / 36% 36% 84% 84%; /* Enlarge the border-radius */
+    border-radius: 84% 36% 60% 60% / 36% 36% 84% 84%;
+    /* Enlarge the border-radius */
   }
   67% {
-    border-radius: 120% 72% 72% 120% / 120% 120% 72% 72%; /* Enlarge the border-radius */
+    border-radius: 120% 72% 72% 120% / 120% 120% 72% 72%;
+    /* Enlarge the border-radius */
   }
 }
 
 .banner img {
-  width: 264px; /* Enlarge the width by 20% */
-  height: 264px; /* Enlarge the height by 20% */
+  width: 396px; /* Increase the width by 50% */
+  height: 396px; /* Increase the height by 50% */
   object-fit: cover;
   animation: morph 3.5s linear infinite;
 }
